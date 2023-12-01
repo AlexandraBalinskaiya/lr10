@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fruitArray = [...fruits, ...Array(10).fill(centralLineLuckyFruit)];
     }
     const index = Math.floor(Math.random() * fruitArray.length);
-    return `images/${fruitArray[index]}.png`;
+    return `${fruitArray[index]}.png`;
 }
     function updateCellImage(cell, isCentralLine = false) {
 		const img = document.createElement('img');
