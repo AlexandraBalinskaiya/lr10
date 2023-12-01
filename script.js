@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!centralLineLuckyFruit) {
             centralLineLuckyFruit = fruits[Math.floor(Math.random() * fruits.length)];
         }
-        fruitArray = [...fruits, ...Array(1).fill(centralLineLuckyFruit)];
+        fruitArray = [...fruits, ...Array(3).fill(centralLineLuckyFruit)];
     }
     const index = Math.floor(Math.random() * fruitArray.length);
     return `${fruitArray[index]}.png`;
